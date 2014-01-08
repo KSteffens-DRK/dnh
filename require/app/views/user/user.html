@@ -1,0 +1,32 @@
+<table>
+    <thead>
+        <tr>
+            <th scope="col">BenutzerId</th>
+            <th scope="col">LoginName</th>
+            <th scope="col">Password</th>
+            <th scope="col">gesperrt</th>
+            <th scope="col">versuche</th>
+            <th scope="col">Gemeinschaft</th>
+            <th scope="col">Bereitschaft</th>
+            <th scope="col">Vorname</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <repeat group="{{ @users }}" value="{{ @user }}">
+            <tr>
+                <td>{{ trim(@user->BenutzerId) }} </td>
+                <td>{{ trim(@user->LoginName) }} </td>
+                <td>{{ trim(@user->Password) }} </td>
+                <td>{{ trim(@user->gesperrt) }} </td>
+                <td>{{ trim(@user->versuche) }} </td>
+                <td>{{ trim(@user->Gemeinschaft) }} </td>
+                <td>{{ trim(@user->Bereitschaft) }} </td>
+                <td>{{ trim(@user->Vorname) }} </td>
+                <td>{{ trim(@user->Name) }} </td>
+                <td>{{ trim(@user->Email) }} </td>
+            </tr>
+        </repeat>
+    </tbody>
+</table>

@@ -1,0 +1,26 @@
+<form action="{{ @BASE.'/login' }}" method="post" class="form-login">
+	<table border="0">
+		<tr>
+			<td>
+				{{@email}}
+			</td>
+			<td>
+				<input class="email" name="email" type="text" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				{{@password}}
+			</td>
+			<td>
+				<input class="password" name="password" type="password" />
+			</td>
+		</tr>
+		<tr align="center">
+			<td colspan="2">
+				<button type="submit" class="login" name="login" ><i class="login"></i>{{@submitbutton}}</button> 
+			</td>
+		</tr>
+
+	</table>
+</form>
